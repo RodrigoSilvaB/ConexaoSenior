@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/CadastroPaciente.css" media="screen">
+    <script src="https://kit.fontawesome.com/e875350c43.js" crossorigin="anonymous"></script>
+    <title>Cadastro Paciente</title>
+    <link rel="icon" href="img/logo.jpg">
+</head>
+
+<body>
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/Home.html ">
+                    Home <i class="fa-solid fa-house-user"></i></a>
+            </li>
+            <li><a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/Sobre.html">Sobre<i class="fa-solid fa-address-card"></i></a></li>
+            <li><a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/CadastroPaciente.html">Cadastrar<i class="fa-solid fa-keyboard"></i></a></li>
+            <li><a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/Formulario.html">Registrar<i class="fa-solid fa-calendar-day"></i></a></li>
+            <li><a href="#">Relatórios<i class="fa-solid fa-file-lines"></i></a></li>
+            <li><a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/Contato.html#">Contato<i class="fa-solid fa-address-book"></i></a></li>
+            <li><a href="file:///C:/Users/Rodrigo/Documents/VS%20Code/Login.html">Entrar<i class="fa-solid fa-person-walking-arrow-right"></i></a></li>
+        </ul>
+    </nav>
+    <h4 id="titulo">Dados do Paciente</h4>
+    <br>
+    <div class="campo">
+        <label for="nome">Nome Completo</label>
+        <input type='text' id="nome" name="nome" style="width: 525px;" required>
+    </div>
+    <div class="campo">
+        <label for="sexo">Sexo:</label>
+        <br>
+        <input type="radio" id="sexo-m" name="sexo" value="Masculino">
+        <label for="sexo-m">Masculino</label><br>
+        <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+        <label for="sexo-f">Feminio</label>
+    </div>
+    <div class="campo">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+    </div>
+    <div class="campo">
+        <label for="dtnasc">Data Nascimento</label>
+        <input type='date' id='dtnasc' name='dtnasc'>
+    </div>
+    <br>
+    <br>
+    <div class="campo">
+        <h4>Dados do Responsável</h4>
+        <br>
+        <label for="nome"> Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="nome">Sobrenome</label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+    <Div class="campo">
+        <label for="telefone">Telef.:</label>
+        <input type="text" class="form-control cel-sp-mask" placeholder="Ex.: (00) 0 00000-0000">
+    </Div>
+    <Div class="campo">
+        <label for="email">Email:</label>
+        <input type='email' id='email' name='email' required>
+    </Div>
+    <div class="campo">
+        <label for="CEP"> C E P:</label>
+        <input type="text" name="CEP" id="CEP" placeholder="Ex.: 00000-000">
+        <label for="logradouro">Logra.:</label>
+        <input type="text" name="logradouro" id="logradouro">
+        <label for="numero">Número</label>
+        <input type="text" name="numero" id="numero" style="width: 60px;">
+        <br>
+        <br>
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro">
+        <label for="complemento">Compl.:</label>
+        <input type="text" name="complemento" id="complemento">
+        <br>
+        <br>
+        <label for="Estado">Esta.:</label>
+        <select name="estado">
+            <option selected="" value="">Selecione o Estado (UF)</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceará">Ceará</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Paraíba</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+            </select>
+        <label for="ciadade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade">
+    </div>
+    <br>
+    <label for="msg">Observação</label><br>
+    <textarea id="msg" name="msg" rows="6" cols="79"></textarea>
+    <br>
+    <button class="botao" type="submit" style="margin-top: 15px; margin-left: 40px" onsubmit="">Salvar</button>
+    <img src="img/background5.jpg.png" alt="">
+</body>
+
+</html>
