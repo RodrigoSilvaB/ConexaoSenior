@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 200%;
+    max-height: 200%;
+    position: absolute;
+    top: 80%;
+    left: 54.6%;
+}
+
+.cat {
+    height: 300px;
+    width: 300px;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 0%;
+}
+
+fieldset {
+    margin-left: 0%;
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 0%;
+    margin-top: 0%;
+    justify-content: center;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.5em;
+    color: #59429d;
+    display: inline;
+}
+
+.campo input[type="text"],
+.campo input[type="radio"],
+.campo input[type="date"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: inline;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%)
+}
+
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+
+/* Elementos de classe botão e de tag <select> */
+
+.botao,
+select {
+    cursor: pointer;
+}
+
+
+/* Código CSS para o menu*/
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+    margin-left: 0%;
+}
+
+#menu-h ul {
+    max-width: 1200px;
+    list-style: none;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a,
+i {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
